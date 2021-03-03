@@ -18,5 +18,5 @@ def fun_TestListTuple():
     y=3
     print(tuple_a[-1][-1])
 
-main():
+if __name__ == "__main__":
     print('Hello World!')
