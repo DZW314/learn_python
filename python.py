@@ -25,6 +25,14 @@ def fun_TestListTuple():
     y=3
     print(tuple_a[-1][-1])
 
+def fun_TestFloat():
+    fun_SplitLine('float')
+    a=3.4e10
+    b=10/3
+    print('The float formate about 10/3 is')
+    print(f'{b}, the type is {type(b)}.')
+
+
 if __name__ == "__main__":
     print('''Hello World!
 Test content:
@@ -40,7 +48,7 @@ Test content:
     elif num ==2:
         fun_TestListTuple()
     elif num == 3:
-        print('float')
+        fun_TestFloat()
     elif num == 4:
         print('string')
     elif num == 5:
