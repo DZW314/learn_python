@@ -25,6 +25,11 @@ def fun_TestListTuple():
     y=3
     print(tuple_a[-1][-1])
 
+def fun_TestString():
+    fun_SplitLine('string')
+    s='Hello' + 'World' + ' !'
+    print(s)
+
 if __name__ == "__main__":
     print('''Hello World!
 Test content:
@@ -42,7 +47,7 @@ Test content:
     elif num == 3:
         print('float')
     elif num == 4:
-        print('string')
+        fun_TestString()
     elif num == 5:
         print('boolean')
     else:
