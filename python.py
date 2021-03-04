@@ -7,6 +7,13 @@ def fun_SplitLine(tmp):
 
 def fun_TestInt():
     fun_SplitLine('int')
+    a = 1
+    b = 10_000_000
+    c = 0xff
+    print(f'''整数a的值：{a}
+带下划线的整数b的值：{b}
+十六进制c的值：{c}
+    ''')
 
 def fun_TestListTuple():
     fun_SplitLine('list and tuple')
@@ -19,4 +26,24 @@ def fun_TestListTuple():
     print(tuple_a[-1][-1])
 
 if __name__ == "__main__":
-    print('Hello World!')
+    print('''Hello World!
+Test content:
+1. int
+2. list and tuple
+3. float
+4. string
+5. boolean
+    ''')
+    num = int(input('Type the test number:'))
+    if num == 1:
+        fun_TestInt()
+    elif num ==2:
+        fun_TestListTuple()
+    elif num == 3:
+        print('float')
+    elif num == 4:
+        print('string')
+    elif num == 5:
+        print('boolean')
+    else:
+        print('end')
