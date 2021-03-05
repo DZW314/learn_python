@@ -30,6 +30,15 @@ def fun_TestString():
     s='Hello' + 'World' + ' !'
     print(s)
 
+def fun_TestSetDict():
+    fun_SplitLine(set and dict)
+    set_a = set([1,2,3,4])
+    dict_b = {'Cable': 630, 'Cyborg': 650, 'Electron': 850}
+    set_c = set([2,3,4,5])
+    print('set show:')
+    print(set_a)
+    print(dict_b['Cyborg'])
+
 if __name__ == "__main__":
     print('''Hello World!
 Test content:
@@ -38,6 +47,7 @@ Test content:
 3. float
 4. string
 5. boolean
+6. set and dict
     ''')
     num = int(input('Type the test number:'))
     if num == 1:
@@ -49,6 +59,8 @@ Test content:
     elif num == 4:
         fun_TestString()
     elif num == 5:
-        print('boolean')
+        pass
+    elif num == 6:
+        fun_TestSetDict()
     else:
-        print('end')
+        print('END.')
