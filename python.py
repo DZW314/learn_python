@@ -25,7 +25,6 @@ def fun_TestListTuple():
     y=3
     print(tuple_a[-1][-1])
 
-<<<<<<< HEAD
 def fun_TestFloat():
     fun_SplitLine('float')
     a=3.4e10
@@ -33,7 +32,6 @@ def fun_TestFloat():
     print('The float formate about 10/3 is')
     print(f'{b}, the type is {type(b)}.')
 
-=======
 def fun_TestString():
     fun_SplitLine('string')
     s='Hello' + 'World' + ' !'
@@ -47,7 +45,6 @@ def fun_TestSetDict():
     print('set show:')
     print(set_a)
     print(dict_b['Cyborg'])
->>>>>>> develop
 
 if __name__ == "__main__":
     print('''Hello World!
