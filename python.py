@@ -25,6 +25,7 @@ def fun_TestListTuple():
     y=3
     print(tuple_a[-1][-1])
 
+<<<<<<< HEAD
 def fun_TestFloat():
     fun_SplitLine('float')
     a=3.4e10
@@ -32,6 +33,21 @@ def fun_TestFloat():
     print('The float formate about 10/3 is')
     print(f'{b}, the type is {type(b)}.')
 
+=======
+def fun_TestString():
+    fun_SplitLine('string')
+    s='Hello' + 'World' + ' !'
+    print(s)
+
+def fun_TestSetDict():
+    fun_SplitLine(set and dict)
+    set_a = set([1,2,3,4])
+    dict_b = {'Cable': 630, 'Cyborg': 650, 'Electron': 850}
+    set_c = set([2,3,4,5])
+    print('set show:')
+    print(set_a)
+    print(dict_b['Cyborg'])
+>>>>>>> develop
 
 if __name__ == "__main__":
     print('''Hello World!
@@ -41,6 +57,7 @@ Test content:
 3. float
 4. string
 5. boolean
+6. set and dict
     ''')
     num = int(input('Type the test number:'))
     if num == 1:
@@ -50,8 +67,10 @@ Test content:
     elif num == 3:
         fun_TestFloat()
     elif num == 4:
-        print('string')
+        fun_TestString()
     elif num == 5:
-        print('boolean')
+        pass
+    elif num == 6:
+        fun_TestSetDict()
     else:
-        print('end')
+        print('END.')
