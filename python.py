@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import random
+
+
 def fun_SplitLine(tmp):
     print()
     print('//////////////////////////////////////////////')
@@ -46,6 +49,41 @@ def fun_TestSetDict():
     print(set_a)
     print(dict_b['Cyborg'])
 
+def fun_TestLogic():
+    fun_SplitLine('if')
+    num = input('Type a number between 1 and 10:')
+    num = int(num)
+    if num == 1:
+        print('You are the No.1')
+    elif 2<= num <= 4:
+        print('加油')
+    elif 5<= num <=10:
+        print('ありがとう')
+    else:
+        print('This is a job. Do you?')
+
+    fun_SplitLine('for')
+    dict_team = {'Lily':0,'Leo':0,'Nancy':0,'Conan':0,'Tom':0}
+    str_winner = ''
+    int_winscore = 0
+
+    print('As below the team members, there is a winner.')
+    print('They are Lily, Leo, Nancy, Conan, and Tom.')
+    tmp = input('Do you know who is the winner?')
+    for n in dict_team:
+        i = random.randint(0,100)
+        print("%s's test scores is %d." %(n,i))
+        dict_team[n] = i
+        if i > int_winscore:
+            int_winscore = i
+            str_winner = n
+    print('The winner is %s, the score is %d' % (str_winner,int_winscore))
+    if tmp == str_winner:
+        print('Congratulation!')
+    else:
+        print('Game over.')
+    
+
 
 if __name__ == "__main__":
     print('''Hello World!
@@ -56,6 +94,7 @@ Test content:
 4. string
 5. boolean
 6. set and dict
+7. logic 'for and if'
     ''')
     num = int(input('Type the test number:'))
     if num == 1:
@@ -70,5 +109,7 @@ Test content:
         pass
     elif num == 6:
         fun_TestSetDict()
+    elif num == 7:
+        fun_TestLogic()
     else:
         print('END.')
