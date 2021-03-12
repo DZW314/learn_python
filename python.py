@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import random
+from hanoi import hanoi
 
 
 def fun_SplitLine(tmp):
@@ -87,6 +88,13 @@ def fun_TestLogic():
 
 if __name__ == "__main__":
     print('''Hello World!
+    Test or Game:
+    1. Test
+    2. Game
+    ''')
+    numl1 = int(input('Type the number:'))
+    if numl1 == 1:
+        print('''Hello World!
 Test content:
 1. int
 2. list and tuple
@@ -96,20 +104,24 @@ Test content:
 6. set and dict
 7. logic 'for and if'
     ''')
-    num = int(input('Type the test number:'))
-    if num == 1:
-        fun_TestInt()
-    elif num ==2:
-        fun_TestListTuple()
-    elif num == 3:
-        fun_TestFloat()
-    elif num == 4:
-        fun_TestString()
-    elif num == 5:
-        pass
-    elif num == 6:
-        fun_TestSetDict()
-    elif num == 7:
-        fun_TestLogic()
+        numl2 = int(input('Type the test number:'))
+        if numl2 == 1:
+            fun_TestInt()
+        elif numl2 ==2:
+            fun_TestListTuple()
+        elif numl2 == 3:
+            fun_TestFloat()
+        elif numl2 == 4:
+            fun_TestString()
+        elif numl2 == 5:
+            pass
+        elif numl2 == 6:
+            fun_TestSetDict()
+        elif numl2 == 7:
+            fun_TestLogic()
+        else:
+            print('END.')
+    elif numl1 == 2:
+        hanoi()
     else:
         print('END.')
