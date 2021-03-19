@@ -2,12 +2,9 @@
 # -*- coding: utf-8 -*-
 import random
 from hanoi import hanoi
+from baserole import fun_SplitLine
+from advancedfeture import fun_TestListTuple
 
-
-def fun_SplitLine(tmp):
-    print()
-    print('//////////////////////////////////////////////')
-    print("Test for %s" % tmp)
 
 def fun_TestInt():
     fun_SplitLine('int')
@@ -18,16 +15,6 @@ def fun_TestInt():
 带下划线的整数b的值：{b}
 十六进制c的值：{c}
     ''')
-
-def fun_TestListTuple():
-    fun_SplitLine('list and tuple')
-    x=1
-    y=2
-    list_a = [1,2,3,4,5,6,7,8,9,10]
-    tuple_a = (1,2,3,[x,y])
-    print(tuple_a[-1][-1])
-    y=3
-    print(tuple_a[-1][-1])
 
 def fun_TestFloat():
     fun_SplitLine('float')
