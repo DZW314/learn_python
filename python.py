@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 import random
 from hanoi import hanoi
-from baserole import fun_SplitLine
+from baserole import *
 from advancedfeture import fun_TestListTuple
-
 
 def fun_TestInt():
     fun_SplitLine('int')
@@ -74,8 +73,8 @@ def fun_TestLogic():
 
 
 if __name__ == "__main__":
-    print('''Hello World!
-    Test or Game:
+    fun_helloworld('D')
+    print('''Test or Game:
     1. Test
     2. Game
     ''')
